@@ -13,7 +13,6 @@ while (i <= 100) {
 
   // Variabile di appoggio per cambiare il messaggio, se la condizione di verifica il Messaggio non è più = i (contatore), ma diventa un messaggio
   messaggio = i;
-  console.log("messaggio" + messaggio);
   // Uso AND logico per far si che tutte e due le condizioni siano vere
   if((i % 3 == 0) && (i % 5 == 0)) {
     messaggio = "FizzBuzz"
