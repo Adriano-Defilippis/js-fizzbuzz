@@ -5,16 +5,19 @@
 
 // creo un ciclo che mi stampi 100 numeri
 var i = 1;
-var fizz = false;
 
 while (i <= 100) {
 
   //creo un controllo all'interno del ciclo per cercare i multipli di 3
   if(i % 3 == 0){
-    console.log('controllo condizione: ' + i + (i % 3 == 0));
+    console.log('Fizz');
+    // console.log('controllo condizione: ' + i + (i % 3 == 0));
   }
   else if(i % 5 == 0){
-    console.log('controllo condizione: ' + i + (i % 5 == 0));
+    console.log('Buzz');
+    // console.log('controllo condizione: ' + i + (i % 5 == 0));
+  } else if ((i % 3 == 0) & (i % 5 == 0)) {
+
   }
   console.log(i);
   i++;
