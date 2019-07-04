@@ -5,7 +5,7 @@
 
 // creo un ciclo che mi stampi 100 numeri
 
-var i, messaggio;
+var i, messaggio, conTemp;
 i = 1;
 
 
@@ -13,6 +13,7 @@ while (i <= 100) {
 
   // Variabile di appoggio per cambiare il messaggio, se la condizione di verifica il Messaggio non è più = i (contatore), ma diventa un messaggio
   messaggio = i;
+  conTemp = document.getElementById('lista').innerHTML;
   // Uso AND logico per far si che tutte e due le condizioni siano vere
   if((i % 3 == 0) && (i % 5 == 0)) {
     messaggio = "FizzBuzz"
@@ -28,7 +29,10 @@ while (i <= 100) {
   // console.log('controllo condizione: ' + i + (i % 5 == 0));
   }
 
+    // Faccio scrivere una lista in Html
+    document.getElementById('lista').innerHTML = conTemp + '<li>' + messaggio +'</li>';
+    //Risultato in console
     console.log(messaggio);
-    i++;
 
+    i++;
 }
