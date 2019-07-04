@@ -4,57 +4,32 @@
 //Per i multipli sia di 3 che di 5, stampa 'FizzBuzz'
 
 // creo un ciclo che mi stampi 100 numeri
-// var i = 1;
-// // Variabile di appoggio per cambiare il numero con il testo e non modificare il contatore del ciclo
-// var messaggio = "";
-//
-// while (i <= 100) {
-//
-//   //creo un controllo all'interno del ciclo per cercare i multipli di 3
-//   if(i % 3 == 0){
-//   // console.log(i.replace(i,"Fizz"));
-//     console.log(messaggio = "Fizz");
-//   // console.log('controllo condizione: ' + i + (i % 3 == 0));
-//   }
-//   //creo un controllo all'interno del ciclo per cercare i multipli di 5
-//
-//   else if(i % 5 == 0){
-//     console.log(messaggio = 'Buzz');
-//   // console.log('controllo condizione: ' + i + (i % 5 == 0));
-//   }
-//   // Uso AND logico per far si che tutte e due le condizioni siano vere
-//   else if ((i % 3 == 0) && (i % 5 == 0)) {
-//     messaggio="";
-//     console.log(messaggio = "FizzBuzz");
-//   }
-//
-//     console.log(i);
-//     i++;
-//
-// }
 
-var i = 1;
+var i, messaggio;
+i = 0;
+
+
 while (i <= 100) {
 
-  //creo un controllo all'interno del ciclo per cercare i multipli di 3
+  // Variabile di appoggio per cambiare il messaggio, se la condizione di verifica il Messaggio non è più = i (contatore), ma diventa un messaggio
+  messaggio = i;
+  console.log("messaggio" + messaggio);
+  // Uso AND logico per far si che tutte e due le condizioni siano vere
   if((i % 3 == 0) && (i % 5 == 0)) {
-    messaggio="";
-    console.log(messaggio = "FizzBuzz");
+    messaggio = "FizzBuzz"
   }
-  //creo un controllo all'interno del ciclo per cercare i multipli di 5
-
+  //creo un controllo all'interno del ciclo per cercare i multipli di 3
   else if(i % 3 == 0){
-  // console.log(i.replace(i,"Fizz"));
-    console.log(messaggio = "Fizz");
+    messaggio = "Fizz"
   // console.log('controllo condizione: ' + i + (i % 3 == 0));
   }
-  // Uso AND logico per far si che tutte e due le condizioni siano vere
+  //creo un controllo all'interno del ciclo per cercare i multipli di 5
   else if (i % 5 == 0){
-    console.log(messaggio = 'Buzz');
+    messaggio = "Buzz"
   // console.log('controllo condizione: ' + i + (i % 5 == 0));
   }
 
-    console.log(i);
+    console.log(messaggio);
     i++;
 
 }
