@@ -5,7 +5,8 @@
 
 // creo un ciclo che mi stampi 100 numeri
 var i = 1;
-var messaggio = i;
+// Variabile di appoggio per cambiare il numero con il testo e non modificare il contatore del ciclo
+var messaggio;
 
 while (i <= 100) {
 
@@ -16,13 +17,15 @@ while (i <= 100) {
   }
   //creo un controllo all'interno del ciclo per cercare i multipli di 5
   else if(i % 5 == 0){
-    console.log('Buzz');
+
+    console.log(messaggio = messaggio + 'Buzz');
     // console.log('controllo condizione: ' + i + (i % 5 == 0));
   }
   // Uso AND logico per far si che tutte e due le condizioni siano vere
-  else if ((i % 3 == 0) & (i % 5 == 0)) {
-    console.log('FizzBuzz');
-  }
+  // else if (i = 1) {
+    // console.log(messaggio = 'FizzBuzz');
+    // console.log( "and " + (i % 3 == 0)  && (i % 5 == 0));
+  // }
   console.log(i);
   i++;
 }
