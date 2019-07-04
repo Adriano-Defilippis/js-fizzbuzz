@@ -6,7 +6,7 @@
 // creo un ciclo che mi stampi 100 numeri
 
 var i, messaggio;
-i = 0;
+i = 1;
 
 
 while (i <= 100) {
