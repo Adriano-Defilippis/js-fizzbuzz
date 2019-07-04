@@ -5,19 +5,23 @@
 
 // creo un ciclo che mi stampi 100 numeri
 var i = 1;
+var messaggio = i;
 
 while (i <= 100) {
 
   //creo un controllo all'interno del ciclo per cercare i multipli di 3
   if(i % 3 == 0){
-    console.log('Fizz');
+    console.log(messaggio = 'Fizz');
     // console.log('controllo condizione: ' + i + (i % 3 == 0));
   }
+  //creo un controllo all'interno del ciclo per cercare i multipli di 5
   else if(i % 5 == 0){
     console.log('Buzz');
     // console.log('controllo condizione: ' + i + (i % 5 == 0));
-  } else if ((i % 3 == 0) & (i % 5 == 0)) {
-
+  }
+  // Uso AND logico per far si che tutte e due le condizioni siano vere
+  else if ((i % 3 == 0) & (i % 5 == 0)) {
+    console.log('FizzBuzz');
   }
   console.log(i);
   i++;
